@@ -40,7 +40,7 @@ class ErrorView: UIView {
         let stackView = UIStackView()
         stackView.axis = .horizontal
         stackView.alignment = .fill
-        stackView.distribution = .fillProportionally
+        stackView.distribution = .fill
         stackView.backgroundColor = .clear
         stackView.spacing = 0
         stackView.translatesAutoresizingMaskIntoConstraints = false
@@ -50,7 +50,7 @@ class ErrorView: UIView {
     private lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.font = UIFont.boldSystemFont(ofSize: 15)
-        titleLabel.numberOfLines = 2
+        titleLabel.numberOfLines = 0
         titleLabel.textColor = .white
         titleLabel.textAlignment = .center
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -61,7 +61,6 @@ class ErrorView: UIView {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = .clear
-        button.clipsToBounds = true
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 10)
         button.titleLabel?.textColor = .red
         button.addTarget(self, action: #selector(didPressOnAction), for: .touchUpInside)

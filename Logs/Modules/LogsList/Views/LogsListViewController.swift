@@ -60,8 +60,8 @@ class LogsListViewController: UIViewController {
         errorViewHeightConstraint = errorView.heightAnchor.constraint(equalToConstant: 0)
         
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
-            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -8),
+            tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 16),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -8),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             
@@ -113,7 +113,7 @@ extension LogsListViewController: LogsListViewInterface {
 extension LogsListViewController: UITableViewDelegate {
         
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 50
     }
 }
 
