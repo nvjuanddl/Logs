@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Logs
+
+  Created by Juan Dario Delgado L on 1/07/22.
+  
+*/
+
+"logsList.noInternetConection" = "There is no Internet conection";
+"logsList.tryAgainLater" = "We are sorry for this inconvenience, please try again later.";
+"logsList.tryAgain" = "Try again";
+"logsList.title" = "Registros";
